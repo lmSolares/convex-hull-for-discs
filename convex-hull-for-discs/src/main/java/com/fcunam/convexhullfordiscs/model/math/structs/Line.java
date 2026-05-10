@@ -1,4 +1,4 @@
-package com.fcunam.convexhullfordiscs.math.structs;
+package com.fcunam.convexhullfordiscs.model.math.structs;
 
 import org.jetbrains.annotations.NotNull;
 
