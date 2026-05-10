@@ -1,4 +1,18 @@
 package com.fcunam.convexhullfordiscs;
 
-public class ConvexHullApp {
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import java.io.IOException;
+
+public class ConvexHullApp extends Application {
+    @Override
+    public void start(Stage stage) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(ConvexHullApp.class.getResource("view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 650, 500);
+        stage.setTitle("Convex Hull for Discs");
+        stage.setScene(scene);
+        stage.show();
+    }
 }
